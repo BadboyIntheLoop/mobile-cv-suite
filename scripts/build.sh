@@ -82,7 +82,9 @@ source $SCRIPT_DIR/cxxopts.sh
 if [[ $USE_SLAM == "ON" ]]; then
   if [[ -z $IOS_CROSS_COMPILING_HACKS && $OPENBLAS == "ON" ]]; then
     # iOS uses Accelerate framework instead.
-    source $SCRIPT_DIR/openblas.sh
+    # OpenBlas on jetson is already built
+    # source $SCRIPT_DIR/openblas.sh
+    echo "Jetson have already built OpenBLAS"
   fi
   cd $ROOT_DIR
   source $SCRIPT_DIR/suitesparse.sh

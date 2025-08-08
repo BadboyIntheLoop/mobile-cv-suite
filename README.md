@@ -32,16 +32,25 @@ target_link_libraries(your_target PUBLIC mobile-cv-suite)
 You most likely need to install these Linux packages: `gfortran libglfw3-dev clang`
 and on some systems, you may also need some or all of the following to build the full suite, including visualizations:
 
-    libgtk2.0-dev
-    libgstreamer1.0-dev
-    libvtk6-dev
-    libavresample-dev
-    libopengl-dev # or mesa-common-dev
-    libglew-dev
-    libxkbcommon-dev
-    wayland-protocols
-    python3-distutils
-    python3-dev
+    libgtk2.0-dev \
+    libgstreamer1.0-dev \
+    libvtk6-dev \
+    libavresample-dev \
+    libopengl-dev # or mesa-common-dev \
+    libglew-dev \
+    libxkbcommon-dev \
+    wayland-protocols \
+    python3-distutils \
+    python3-dev \
+    libglfw3-dev \
+    qttools5-dev-tools \
+    libqt5svg5-dev \
+    libqt5serialbus5-dev  \
+    libqt5x11extras5-dev \
+    libqt5opengl5-dev \
+    libqt5charts5-dev \
+    libncurses5-dev \
+    pybind11-dev \
 
 (Another option is using `BUILD_VISUALIZATIONS=OFF ./scripts/build.sh` to disable the visualizations)
 
